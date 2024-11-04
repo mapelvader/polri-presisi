@@ -1,0 +1,927 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+* {
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Segoe UI";
+    font-weight: bolder;
+}
+
+.spacer {
+    width: 100%;
+    height: 100px;
+}
+
+#sticky-root {
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 0;
+    max-width: 100vw;
+    background-color: #4F4945;
+}
+
+#sticky-root .block {
+    background-color: #4F4945;
+}
+
+#sticky-root *,
+#sticky-root :after,
+#sticky-root :before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+section {
+    display: block;
+}
+
+.pp-section {
+    position: relative;
+}
+
+#sticky-root .pp-header>* {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+#sticky-root .containersticky {
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+#sticky-root .pp-section {
+    position: relative;
+}
+
+#sticky-root .contentsticky .question-title {
+    position: relative;
+    font-size: 1.25rem;
+    padding: .5rem 0;
+}
+
+.quotes {
+    position: relative;
+    z-index: 1;
+}
+
+.quote {
+    padding: 50vh 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.content__bg {
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: 0;
+    background: #4F4945;
+}
+
+.content__bg__container {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    z-index: 1;
+    position: absolute;
+}
+
+#sticky-root .content__bg .content__bg__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#sticky-root .content__bg .content__bg__container .bg-img {
+    -webkit-transition: opacity 1s ease-in-out, -webkit-transform 2.5s ease-in-out;
+    transition: transform 2.5s ease-in-out, opacity 1s ease-in-out;
+    transition: transform 2.5s ease-in-out, opacity 1s ease-in-out, -webkit-transform 2.5s ease-in-out;
+    display: block;
+    max-width: 100%;
+    -o-object-fit: contain;
+    position: absolute;
+    bottom: -1vh;
+}
+
+#sticky-root .pp-section {
+    position: relative;
+}
+
+.quote-content {
+    position: relative;
+    margin: 0px auto;
+    z-index: 5;
+}
+
+.quote-content h1 {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 70px;
+    color: #fff;
+    margin-top: -35vh;
+    text-align: center;
+}
+
+
+/* PRESTRASI */
+
+#header {
+    height: 100vh;
+}
+
+#prestasi {
+    background-image: url('../images/bg_polisi.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#prestasi .card {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    width: 80%;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 70px;
+    transition: 0.5s;
+}
+
+#prestasi .card:hover {
+    transform: scale(1.2);
+}
+
+#prestasi .tropi {
+    display: flex;
+    position: absolute;
+    margin-top: -100px;
+    margin-left: 70%;
+    width: 70px;
+}
+
+.card .rank-box {
+    width: 100%;
+}
+
+.card .rank {
+    background-color: #5A5A5A;
+    display: inline;
+    padding-left: 15%;
+    padding-right: 10px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    font-family: "Segoe UI";
+    font-weight: bolder;
+    font-size: 3em;
+    color: white;
+}
+
+.card-top {
+    margin-bottom: 0;
+}
+
+.card-body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
+.card .content {
+    padding: 10%;
+    font-family: "Segoe UI";
+    font-weight: 700;
+    font-size: 1.4em;
+    text-align: center;
+    line-height: 1.1;
+}
+
+.card .foot {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: -10px;
+}
+
+.content-ikm h1 {
+    color: white;
+    font-size: 2.2em;
+}
+
+.content-ikm p {
+    margin-top: 10px;
+    color: white;
+    font-size: 1.2em;
+}
+
+.myChartBox {
+    width: 250px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.myChartText {
+    position: absolute;
+    left: 0;
+    top: 45%;
+    height: 40px;
+    width: 100%;
+    z-index: 9999999999999999;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.6em;
+}
+
+.header-fasilitas {
+    text-align: center;
+    color: white;
+}
+
+.header-fasilitas h1 {
+    font-size: 3em;
+}
+
+.header-fasilitas h3 {
+    font-size: 1.2em;
+}
+
+.f-box {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.f-box img {
+    max-width: 90%;
+    height: 100px;
+}
+
+.f-box .content {
+    color: white;
+    padding: 15px;
+    padding-top: 5px !important;
+}
+
+.f-box .content h3 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.f-box .content p {
+    font-size: 0.95em;
+}
+
+.f-foot {
+    text-align: center;
+    color: white;
+    line-height: 1.6;
+}
+
+.f-foot {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 768px) {
+    .f-foot {
+        width: 85%;
+    }
+}
+
+.k-img {
+    text-align: center;
+}
+
+.k-img img {
+    height: 550px;
+}
+
+.k-content h3 {
+    padding: 35px;
+    font-size: 1.4em;
+    font-weight: 600;
+    color: white;
+    border: solid white 5px;
+    border-radius: 30px;
+}
+
+.k-content h2 {
+    color: white;
+    font-weight: 200;
+    padding: 1.6em;
+}
+
+#qoute {
+    background-image: url('../images/logo_polri.png');
+    background-position: center;
+    background-repeat: round;
+}
+
+.image-bg {
+    background: rgb(195, 34, 34);
+    background: linear-gradient(0deg, rgba(195, 34, 34, 0.9) 0%, rgba(97, 45, 253, 0.9) 100%);
+}
+
+.smoke {
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: 100%;
+}
+
+.img {
+    text-align: center;
+}
+
+.img img {
+    width: 83.7%;
+    border-radius: 30px;
+}
+
+#qoute {
+    /*background-repeat: no-repeat;*/
+    /*background-size: 50%;*/
+}
+
+#kapol-bg {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#kapol-bg .content {
+    align-self: center;
+    padding: 20px;
+    width: 80%;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#kapol-bg .content .qoute-in {
+    margin-right: auto;
+    width: 15px;
+    font-size: 3em;
+}
+
+#kapol-bg .content .qoute-out {
+    margin-left: auto;
+    width: 15px;
+    font-size: 3em;
+}
+
+#kapol-bg .content p {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.tagged-by h1 {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#games {
+    background-color: #A5A9FF;
+    background-image: url('../images/bg_city.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #FFF;
+}
+
+.game-image-indicator {
+    position: absolute;
+    bottom: 10%;
+    left: 15%;
+}
+
+.game-image-indicator img {
+    height: 404px;
+}
+
+.g-header {
+    text-align: center;
+}
+
+.g-header h1 {
+    font-size: 3em;
+}
+
+.g-header p {
+    margin-top: 20px;
+}
+
+.g-header p span {
+    font-weight: 700;
+}
+
+.g-pil {
+    margin-top: 30px;
+    color: black;
+}
+
+.g-huruf {
+    text-align: center;
+    font-family: "Segoe UI";
+    font-weight: bolder;
+    font-size: 3.2em;
+}
+
+.g-content {
+    background-color: #FFFFFF;
+    width: 70%;
+    margin-top: -25px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    padding: 30px;
+    font-family: "Segoe UI";
+    font-weight: bolder;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.option-warp {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.o-content {
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    max-width: 600px;
+    height: 450px;
+    padding: 20px;
+    background-color: #A5A9FF;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.o-content h1 {
+    text-align: center;
+    font-size: 2em;
+}
+
+.btn-warp {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.btn-ya {
+    border: none;
+    padding: 10px 30px 10px 30px;
+    border-radius: 10px;
+    background-color: #0024FF;
+    font-weight: bolder;
+    color: white;
+}
+
+.btn-tidak {
+    border: none;
+    padding: 10px 30px 10px 30px;
+    border-radius: 10px;
+    background-color: #FF1200;
+    font-weight: bolder;
+    color: white;
+}
+
+.o-content img {
+    display: none;
+    margin-top: -50px;
+}
+
+@media (min-width: 768px) {
+    .o-content img {
+        display: inline-block;
+    }
+}
+
+#program-prioritas {
+    background-color: #ACA877;
+    background-image: url('../images/bg_krem.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.pp-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.pp-header h1 {
+    font-size: 2.2em;
+}
+
+.pp-header h4 {
+    font-size: 1.2em;
+}
+
+.pp-items {}
+
+.pp-item {
+    margin-top: 5px;
+    padding: 20px;
+    height: 150px;
+}
+
+@media (min-width: 1000px) {
+    .pp-item {
+        margin-top: 5px;
+        padding: 20px;
+        height: 120px;
+    }
+}
+
+.pp-img {
+    text-align: center;
+    align-self: center;
+}
+
+.pp-item-content {
+    display: flex;
+}
+
+.pp-item-content .text {
+    align-self: center;
+    margin-left: 20px;
+}
+
+#penghargaan {
+    background-color: #00C4FF;
+    color: white;
+    background-image: url('../images/bg_city.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.p-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.p-header h1 {
+    font-size: 2.2em;
+}
+
+.p-header h4 {
+    font-size: 1.2em;
+}
+
+.p {
+    position: relative;
+}
+
+.p-item {
+    width: 100%;
+}
+
+.p-item p {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.p-item-foot {
+    width: 40%;
+    height: auto;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 20px;
+    background-color: #25CA8E;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    border-radius: 30px;
+}
+
+.dp-content {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.dp-item {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dp-item-img {
+    width: 90%;
+    height: 450px;
+    display: flex;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dp-item-img img {
+    align-self: center;
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+    width: auto;
+    height: 450px;
+}
+
+.dp-item-content {
+    text-align: center;
+    background-color: white;
+    display: block;
+    color: black;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+    border-radius: 30px;
+    border: none;
+}
+
+.dp-item-content h1 {
+    font-weight: 1400;
+}
+
+.dumas-popup {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999999999999999999999999999;
+}
+
+.dumas-content {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    margin-top: 100px;
+    width: 70%;
+    height: 550px;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 1em;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.dumas-content-header {
+    color: black;
+    text-align: center;
+    width: 100%;
+}
+
+.close-dumas {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: none;
+    padding: 10px;
+    font-weight: bolder;
+    height: 40px;
+    width: 40px;
+}
+
+.dumas-content-header h1 {
+    margin-bottom: 30px;
+}
+
+.dumas-content-header img {
+    border-radius: 20px;
+    width: auto;
+    max-width: 100%;
+    max-height: 350px;
+}
+
+.dumas-content-text {
+    color: black;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    max-width: 700px;
+}
+
+.ccd-img {
+    width: 30px;
+    max-height: 150px;
+}
+
+#pengaduan-mudah {
+    background-color: #B0B086;
+    background-image: url('../images/bg_krem.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.pm-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.pm-header h1 {
+    font-size: 2.2em;
+}
+
+.pm-header p {
+    margin-top: 20px;
+}
+
+#aplikasi-terintegrasi {
+    background-color: #2FB9F2;
+    background-image: url('../images/bg_city.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+}
+
+.at-header h1 {
+    font-size: 2.2em;
+}
+
+.at-item {
+    width: 90%;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.at-item .img {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    font-family: "Segoe UI";
+    font-weight: bolder;
+    font-size: 2.2em;
+}
+
+.at-item img {
+    width: 60%;
+    border-radius: 0;
+}
+
+.at-item .content {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 20px;
+    font-family: "Segoe UI";
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+.foot-content {
+    text-align: center;
+    color: white;
+}
+
+.foot-content .qoute {
+    font-size: 1.2em;
+}
+
+.foot-content h1 {
+    margin-top: 20px;
+    font-size: 2.2em;
+}
+
+.foot-content p {
+    margin-top: 20px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.foot-content .button-place {
+    padding: 30px;
+    text-align: center;
+}
+
+.button-place .btn {
+    padding: 20px;
+    border: 2px solid white;
+    color: white;
+    margin: 30px;
+    border-radius: 10px;
+    transition: 0.5s;
+    display: inline-block;
+}
+
+.button-place .btn:hover {
+    background-color: white;
+    color: black;
+}
+
+@media (min-width: 576px) {
+    .foot-content p {
+        width: 50%;
+    }
+}
+
+.foot-image {
+    overflow: hidden;
+    position: relative;
+    height: 550px;
+}
+
+.img-foot {
+    position: absolute;
+    width: 500px;
+}
+
+.img-1 {
+    top: 100px;
+    left: -30%;
+    z-index: 9999999999999999;
+}
+
+.img-2 {}
